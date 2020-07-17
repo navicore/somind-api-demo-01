@@ -15,6 +15,8 @@ const onRedirectCallback = (appState) => {
   );
 };
 
+console.log(`ejs config: ${JSON.stringify(config, 0, 2)}`)
+console.log(`ejs loc: ${window.location.origin}`)
 ReactDOM.render(
   <Auth0Provider
     domain={config.domain}
