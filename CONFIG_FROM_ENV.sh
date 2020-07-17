@@ -5,3 +5,6 @@ sed "s~##API_ORIGIN##~${API_ORIGIN}~g" |
 sed "s~##API_IDENTIFIER##~${API_IDENTIFIER}~g" > "./src/auth_config.json"
 
 echo "configured for domain $DOMAIN and origin ${APP_ORIGIN}"
+
+cat "./src/auth_config.json"
+
