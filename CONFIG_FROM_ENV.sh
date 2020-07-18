@@ -12,9 +12,9 @@ sed "s/##CLIENT_ID##/${CLIENT_ID}/g" "./public/auth_config_example.js"     |
 sed "s/##DOMAIN##/${DOMAIN}/g"                                             |
 sed "s~##APP_ORIGIN##~${APP_ORIGIN}~g"                                     |
 sed "s~##API_ORIGIN##~${API_ORIGIN}~g"                                     |
-sed "s~##API_IDENTIFIER##~${API_IDENTIFIER}~g" > "./public/auth_config.js"
+sed "s~##API_IDENTIFIER##~${API_IDENTIFIER}~g" > "./build/auth_config.js"
 
-cat "./public/auth_config.js"
+cat "./build/auth_config.js"
 
 #
 # create a config file to load in the api server at runtime.  note this file doesn't help the bundle
