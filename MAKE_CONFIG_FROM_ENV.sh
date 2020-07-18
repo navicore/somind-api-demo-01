@@ -8,7 +8,7 @@
 
 rm -rf "./public/auth_config.js"
 
-sed "s/##CLIENT_ID##/${CLIENT_ID}/g" "./public/auth_config_example.js"     |
+sed "s/##CLIENT_ID##/${CLIENT_ID}/g" "./public/auth_config_template.js"     |
 sed "s/##DOMAIN##/${DOMAIN}/g"                                             |
 sed "s~##APP_ORIGIN##~${APP_ORIGIN}~g"                                     |
 sed "s~##API_ORIGIN##~${API_ORIGIN}~g"                                     |
@@ -22,7 +22,7 @@ cat "./build/auth_config.js"
 #
 rm -rf "./src/auth_config.json"
 
-sed "s/##CLIENT_ID##/${CLIENT_ID}/g" "./src/auth_config_example.json"     |
+sed "s/##CLIENT_ID##/${CLIENT_ID}/g" "./src/auth_config_template.json"     |
 sed "s/##DOMAIN##/${DOMAIN}/g"                                            |
 sed "s~##APP_ORIGIN##~${APP_ORIGIN}~g"                                    |
 sed "s~##API_ORIGIN##~${API_ORIGIN}~g"                                    |
