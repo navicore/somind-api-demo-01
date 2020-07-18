@@ -31,7 +31,7 @@ RUN yarn install --production
 
 COPY --from=build /app/build ./build
 COPY --from=build /app/src/auth_config_example.json ./src/auth_config_example.json
-COPY --from=build /app/auth_config_example.js ./auth_config_example.js
+COPY --from=build /app/public/auth_config_example.js ./public/auth_config_example.js
 COPY --from=build /app/server.js .
 COPY --from=build /app/api-server.js .
 COPY --from=build /app/CONFIG_FROM_ENV.sh .

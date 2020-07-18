@@ -8,10 +8,10 @@
 
 rm -rf "./public/auth_config.js"
 
-sed "s/##CLIENT_ID##/${CLIENT_ID}/g" "./auth_config_example.js"     |
-sed "s/##DOMAIN##/${DOMAIN}/g"                                            |
-sed "s~##APP_ORIGIN##~${APP_ORIGIN}~g"                                    |
-sed "s~##API_ORIGIN##~${API_ORIGIN}~g"                                    |
+sed "s/##CLIENT_ID##/${CLIENT_ID}/g" "./public/auth_config_example.js"     |
+sed "s/##DOMAIN##/${DOMAIN}/g"                                             |
+sed "s~##APP_ORIGIN##~${APP_ORIGIN}~g"                                     |
+sed "s~##API_ORIGIN##~${API_ORIGIN}~g"                                     |
 sed "s~##API_IDENTIFIER##~${API_IDENTIFIER}~g" > "./public/auth_config.js"
 
 cat "./public/auth_config.js"
