@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Auth0Provider } from "@auth0/auth0-react";
-//import config from "./auth_config.json";
 import history from "./utils/history";
 
 const config = window['authConfig'];
@@ -17,8 +16,6 @@ const onRedirectCallback = (appState) => {
   );
 };
 
-console.log(`ejs config from window: ${JSON.stringify(config, 0, 2)}`)
-console.log(`ejs loc: ${window.location.origin}`)
 ReactDOM.render(
   <Auth0Provider
     domain={config.domain}

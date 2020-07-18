@@ -14,6 +14,9 @@ sed "s~##APP_ORIGIN##~${APP_ORIGIN}~g"                                     |
 sed "s~##API_ORIGIN##~${API_ORIGIN}~g"                                     |
 sed "s~##API_IDENTIFIER##~${API_IDENTIFIER}~g" > "./build/auth_config.js"
 
+# support dev mode
+cp "./build/auth_config.js" "./public/auth_config.js"
+
 cat "./build/auth_config.js"
 
 #
