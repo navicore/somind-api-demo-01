@@ -4,7 +4,7 @@ import Highlight from "../components/Highlight";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "../components/Loading";
 
-const { apiOrigin = "http://localhost:3001" } = window['authConfig'];
+const { apiOrigin = "http://localhost:3001" } = window['authConfig'] || {};
 
 export const ExternalApiComponent = () => {
   const [state, setState] = useState({
