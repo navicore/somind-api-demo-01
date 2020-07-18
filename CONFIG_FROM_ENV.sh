@@ -14,6 +14,8 @@ sed "s~##APP_ORIGIN##~${APP_ORIGIN}~g"                                    |
 sed "s~##API_ORIGIN##~${API_ORIGIN}~g"                                    |
 sed "s~##API_IDENTIFIER##~${API_IDENTIFIER}~g" > "./public/auth_config.js"
 
+cat "./public/auth_config.js"
+
 #
 # create a config file to load in the api server at runtime.  note this file doesn't help the bundle
 # user since the bundle is already compiled
@@ -28,3 +30,4 @@ sed "s~##API_IDENTIFIER##~${API_IDENTIFIER}~g" > "./src/auth_config.json"
 
 echo "configured for domain $DOMAIN and origin ${APP_ORIGIN}"
 
+cat "./src/auth_config.json"
