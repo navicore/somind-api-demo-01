@@ -7,6 +7,7 @@ import Loading from "../components/Loading";
 const { apiOrigin = "http://localhost:3001" } = window['authConfig'] || {};
 
 export const ExternalApiComponent = () => {
+
   const [state, setState] = useState({
     showResult: false,
     apiMessage: "",
@@ -57,7 +58,8 @@ export const ExternalApiComponent = () => {
     try {
       const token = await getAccessTokenSilently();
 
-      const response = await fetch(`${apiOrigin}/api/external`, {
+      //const response = await fetch(`${apiOrigin}/api/external`, {
+      const response = await fetch(`${apiOrigin}/dtlab-alligator/type/machinery`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
