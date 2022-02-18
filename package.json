@@ -22,7 +22,7 @@
     "@fortawesome/react-fontawesome": "^0.1.17",
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "cors": "^2.8.5",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "express-jwt": "^6.1.0",
     "helmet": "^5.0.2",
     "highlight.js": "^11.4.0",
