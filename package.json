@@ -19,7 +19,7 @@
     "@auth0/auth0-react": "^1.9.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.0",
 
-    "@fortawesome/react-fontawesome": "^0.1.17",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.3",
