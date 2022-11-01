@@ -26,7 +26,7 @@
     "express-jwt": "^7.7.7",
     "helmet": "^6.0.0",
     "highlight.js": "^11.6.0",
-    "jwks-rsa": "^2.1.5",
+    "jwks-rsa": "^3.0.0",
     "lodash": "4.17.21",
     "morgan": "^1.9.1",
     "node-fetch": "3.2.10",
